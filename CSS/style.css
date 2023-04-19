@@ -1,0 +1,11 @@
+#barra{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    border-top: 1px solid black;
+}
+#carrossel{
+    height: 70vh;
+    background-color: gray;
+}
