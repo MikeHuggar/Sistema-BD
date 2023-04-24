@@ -1,11 +1,57 @@
+
+#logo{
+    margin: auto;
+}
 #barra{
     display: flex;
     justify-content: center;
 }
-footer{
-    border-top: 1px solid black;
+header li{
+    font-weight: bold;
 }
 #carrossel{
     height: 70vh;
     background-color: gray;
+}
+p{
+    text-indent: 5%;
+}
+.sobre{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+.descrição{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.descExib{
+    display: flex;
+    align-items: center;
+}
+.descExib h1{
+    margin-right: 2%;
+}
+.evento{
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.evento img{
+    border-radius: 7px;
+    margin-right: 2%;
+}
+.evento p{
+    padding-right: 1%;
+}
+.evento h5{
+    margin-bottom: -1%;
+}
+footer{
+    border-top: 1px solid black;
+}
+footer h4{
+    color: #2e3192;
+    font-weight: bold;
 }
