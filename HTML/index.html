@@ -10,9 +10,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <!--Imagens são placeholders-->
     <header>
         <div class="container-fluid">
-            <img class="img-responsive" src="">    
+            <img class="img-responsive" id="logo" src="banner.png" width="10%">    
         </div>  
         <nav class="navbar navbar-default">
             <div class="container-fluid navbar-header">
@@ -22,7 +23,13 @@
             </div>
             <div class="container-fluid" id="barra">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">A Mostra</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mostra<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Ficha Técnica</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Edição 2023</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Edições passadas<span class="caret"></span></a>
@@ -95,9 +102,109 @@
             </div>
         </div> 
     </footer>
-
+    <!--Aba "Sobre"-->
+    <div class="container-fluid">
+        <h2 class="text-center">Sobre</h2>
+        <p>A Mostra de Cinema Latino-Americano de Rio Grande surge como um desdobramento da Mostra de Cinema OfCine, criada em 2016, para a exibição dos curtas-metragens produzidos nas oficinas do Projeto de extensão “Oficina de Cinema OfCine” do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul, Campus Rio Grande (IFRS). Sendo seu objetivo, fomentar produções audiovisuais na cidade de Rio Grande por meio do fornecimento de bases teóricas e práticas correspondentes a todos os setores da produção fílmica, numa perspectiva crítica frente à linguagem cinematográfica.</p>
+        <div class="sobre">
+            <img class="img-responsive" src="banner.png" width="10%">
+            <p class="descrição">Em 2018, como resultado de dos dois projetos de extensão, “Oficina de Cinema OfCine” e “Cine Clube”, a Mostra integrou às suas atividades a primeira edição do Cinemário – Seminário de Cinema, para a discussão e formação audiovisual. Também realizou sua primeira exibição de filmes ao ar livre, reunindo a comunidade na rua para prestigiar produções regionais e nacionais.</p>
+        </div>
+        <div class="sobre">
+            <img class="img-responsive" src="banner.png"  width="10%">
+            <p class="descrição">Em 2019, nosso interesse concentra-se no audiovisual latino-americano sob a perspectiva decolonial, que tem como marco o manifesto “Hacia un tercer cine”, lançado em 1969, pelos cineastas argentinos Fernando Solanas e Octavio Getino - no qual, imbuídos das ideias de Franz Fanon, clamavam pela descolonização do olhar de produtores e espectadores cinematográficos latino-americanos, e propunham um enfrentamento estético, narrativo e educativo à linguagem hollywoodiana, partindo de perspectivas nacionais e regionais - que é retomado e reconfigurado na contemporaneidade. O evento manteve o formato que integra Mostra e Seminário, iniciando seu processo de internacionalização, com foco na América Latina. O objetivo é divulgar e discutir o audiovisual latino-americano contemporâneo, por meio da exibição de produções e do intercâmbio com artistas, pesquisadores e realizadores da região.</p>
+        </div>
+        <div class="sobre">
+            <img class="img-responsive" src="banner.png"  width="10%">
+            <p class="descrição">Para que a edição de 2020 pudesse acontecer, muitas mudanças e adaptações precisaram ser feitas devido a necessidade de isolamento social, causado pela pandemia do COVID-19. A Mostra buscou visibilizar as iniciativas cinematográficas (curtas-metragens) potencialmente descolonizadoras de sujeitos e territórios – sobretudo aquelas onde os grupos subalternizados assumem o lugar de enunciação, criando as próprias obras com suas linguagens e problemáticas, agindo de forma a elaborar narrativas contra-hegemônicas em termos de epistemologia territorial e geopolítica do conhecimento (MIGNOLO, 2003). Rastreando intersecções entre as produções cinematográficas latino-americanas recentes, o evento montou sua programação a partir de problematizações contemporâneas apontando caminhos para a sociedade que queremos construir.</p>
+        </div>
+        <div class="sobre">
+            <img class="img-responsive" src="banner.png"  width="10%">
+            <p class="descrição">Para o ano de 2021 a Mostra, propôs como elemento curatorial a bifurcação entre momentos políticos importantes para a América Latina. A atual crise político-econômica aliada ao pretexto sanitário do COVID-19 nos possibilita enxergar um futuro? Entre distopias e fabulações sobre o que nos espera nos traz um caminho entre a civilização e a barbárie. Em sua 3ª edição, o evento manteve o mesmo formato criado em 2021, com uma mostra de filmes convidados que foi exibida online, composta por 12 curtas-metragens divididas em 3 blocos. Também, como evento de abertura, se realizou um Cine Drive-in, que conseguia aproximar o público de uma possível retomada das atividades presenciais. A atividade aconteceu na rua Riachuelo, com os pavilhões do Porto Velho do Rio Grande como cenário, despertando nos participantes uma memória afetiva com o espaço.</p>
+        </div>
+    </div>
+    <!--Aba "Ficha Técnica"-->
+    <div class="container">
+        <div class="col-sm-3">
+            <h3>Coordenação:</h3>
+            <p>Raquel Andrade Ferreira</p>
+        </div>
+        <div class="col-sm-3">
+            <h3>Produção Executiva:</h3>
+            <p>Vitor Pinheiro</p>
+        </div>
+        <div class="col-sm-3">
+            <h3>Direção Criativa:</h3>
+            <p>Gianluca Cozza</p>
+        </div>
+        <div class="col-sm-3">
+            <h3>Assistente de Produção:</h3>
+            <p>Alessa Vaz</p>
+        </div>
+        <div class="col-sm-3">
+            <h3>Identidade Visual:</h3>
+            <p>Jordan Martins</p>
+        </div>
+        <div class="col-sm-3">
+            <h3>Site:</h3>
+            <p>Cassiana Silveira</p>
+        </div>
+        <div class="col-sm-3">
+            <h3>Curadoria:</h3>
+            <p>Lucas Honorato</p>
+            <p>André Berzagui</p>
+            <p>Rubens Fabricio Anzolin</p>
+        </div>
+        <div class="col-sm-3">
+            <h3>Assesoria de Imprensa:</h3>
+            <p>Lisandra Miranda</p>
+            <p>Brenda Pacheco</p>
+            <p>Milene Louzada</p>
+        </div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h3>Social Media:</h3>
+            <p>Gabriele Peres</p>
+            <p>Ana luiza Souza</p>
+            <p>Rafaella Cruz</p>
+            <p>Vinícius Barcellos</p>
+        </div>
+        <div class="col-sm-3">
+            <h3>Colaboradores:</h3>
+            <p>Adryan Copello</p>
+            <p>Jean Amaral</p>
+            <p>Valentina Acosta</p>
+            <p>Angelita Fialho</p>
+            <p>Miguel Albuquerque</p>
+            <p>Aline Dias</p>
+            <p>Matheus Perazo</p>
+            <p>Julia Arocha</p>
+            <p>Cláudia Feltrin</p>
+            <p>Bianca De-Zotti</p>
+        </div>
+    </div>
+    <!--Aba "Exibições"-->
+    <div class="container">
+        <h1 class="text-center">Exibições</h1>
+        <p>Para este ano, as exibições dos filmes irão acontecer em um formato itinerante com o CINEMA DE RUA. Iremos levar nosso cinema para diferentes cantos da cidade do Rio Grande. Nossa primeira exibição será no Rincão da Cebola, no Centro da cidade, depois iremos levar nosso cinema até a Orla da Henrique Pancada, seguindo para a Ilha dos Marinheiros e logo para o Taim, encerrando nosso evento no Cassino. Cada exibição irá acontecer em um dia da semana, de segunda a sexta, às 19h. Acompanhe pelo mapa onde será cada exibição para saber qual lugar fica mais próximo de você.</p>
+        <div class="container">
+            <div class="descExib">
+                <h1>00</h1>
+                <h3>De mês//dia</h3>
+            </div>
+            <h3>Nome do local e Horário</h3>
+            <div class="evento">
+                <img src="banner.png" width="20%">
+                <div>
+                    <h5>Horário</h5>
+                    <h3>Nome do filme, Ano</h3>
+                    <h4>Dirigido por diretor</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui leo, feugiat pharetra sem sed, aliquet vestibulum arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam turpis urna, gravida eu laoreet bibendum, eleifend in neque. Sed rhoncus porttitor nisl vel fermentum. Vivamus in odio vel massa bibendum sollicitudin. Integer posuere nunc non aliquet congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur dapibus elit vitae consequat. Aliquam purus massa, varius non venenatis vel, vehicula non metus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script>
-    
 </script>
 </html>
