@@ -15,6 +15,7 @@ header li{
 }
 p{
     text-indent: 5%;
+    font-size: large;
 }
 .sobre{
     display: flex;
@@ -33,20 +34,32 @@ p{
 .descExib h1{
     margin-right: 2%;
 }
-.evento{
+.evento, .biografia{
     display: flex;
     border: 1px solid gray;
     border-radius: 10px;
 }
-.evento img{
+.evento img, .biografia img{
     border-radius: 7px;
     margin-right: 2%;
 }
-.evento p{
+.evento p, .biografia p{
     padding-right: 1%;
+}
+.biografia{
+    align-items: center;
+    margin-top: 1%;
+}
+.biografia p{
+    padding-top: 2%;
 }
 .evento h5{
     margin-bottom: -1%;
+}
+.inscrever{
+    background-color: red !important;
+    border: 0px !important;
+    padding: 1% !important;
 }
 footer{
     border-top: 1px solid black;
