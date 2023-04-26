@@ -2,9 +2,6 @@
     text-align: center;
     background-color: rgb(207, 207, 207);
 }
-#myNavbar{
-    justify-content: center;
-}
 .carousel-control.left, .carousel-control.right {
     background-image:none !important;
     filter:none !important;
@@ -67,9 +64,6 @@ main{
 nav{
     border: 1px solid black !important;
     margin: 5px;
-}
-#barra{
-    display: flex;
 }
 header li{
     font-weight: bold;
