@@ -1,17 +1,33 @@
 *{
     text-align: center;
 }
-.colapsador{
-    position: relative;
-    left: 100%;
-    bottom: 100%;
-    height: 200px;
-    width: 200px;
-    background-color: #b72025;
+.carousel-control.left, .carousel-control.right {
+    background-image:none !important;
+    filter:none !important;
+ }
+body{
+    overflow-x: hidden;
 }
-.desc{
+#colapsadorA{
+    position: relative;
+    font-size: smaller;
+    top: 1%;
+    right: 2%;
+    text-decoration: none;
+}
+#colapsadorA:hover{
+    cursor: pointer;
+}
+#desc{
     margin-left: 15px;
     visibility: hidden;
+}
+.icon-bar{
+    background-color: gray;
+    border: 1px solid gray;
+}
+a{
+    color: black !important;
 }
 .img-dropdown{
     display: flex;
@@ -19,14 +35,13 @@
     padding: 5px;
     margin: 5px;
     border: solid black 2px;
-    
-   
+    overflow: hidden;
+    max-height: 15vh;
 }
 .img-projeto{
-    height: 500px;
+    height: 100px;
     width: auto;
     margin: 5px;
-
 }
 .carousel-inner{
     display: flex;
@@ -37,6 +52,12 @@ main{
 }
 #logo{
     margin: auto;
+}
+@media screen and (max-width: 767px){
+    .navbar-header{
+        display: flex;
+        flex-direction: column
+    }
 }
 #barra{
     display: flex;
@@ -60,6 +81,12 @@ p{
     margin-top: 0.5%;
     margin-bottom: 0.5%;
 }
+.sobre p{
+    font-size: 0.8vw;
+}
+.sobre img{
+    width: 15%;
+}
 .descrição{
     padding-left: 1%;
     padding-right: 1%;
@@ -71,26 +98,48 @@ p{
 .descExib h1{
     margin-right: 2%;
 }
+@media screen and (max-width: 991px){
+    .biografia p{
+        font-size: 50% !important;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .evento h3{
+        font-size: 1.5vw;
+    }
+    .evento h4{
+        font-size: 1vw;
+    }
+    .evento h5{
+        font-size: 1vw;
+    }
+    .evento p{
+        font-size: 1vw !important;
+    }   
+}
 .evento, .biografia{
     display: flex;
     border: 1px solid gray;
     border-radius: 10px;
+    align-items: center;
+    margin-top: 1%;
 }
 .evento img, .biografia img{
     border-radius: 7px;
     margin-right: 2%;
+    width: 20%;
 }
 .evento p, .biografia p{
     padding-right: 1%;
-}
-.biografia{
-    align-items: center;
-    margin-top: 1%;
+    font-size: medium;
 }
 .biografia p{
     padding-top: 2%;
 }
 .evento h5{
+    margin-bottom: -2%;
+}
+.evento h3{
     margin-bottom: -1%;
 }
 .inscrever{
