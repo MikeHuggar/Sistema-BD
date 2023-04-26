@@ -1,5 +1,9 @@
 *{
     text-align: center;
+    background-color: rgb(207, 207, 207);
+}
+#myNavbar{
+    justify-content: center;
 }
 .carousel-control.left, .carousel-control.right {
     background-image:none !important;
@@ -7,6 +11,7 @@
  }
 body{
     overflow-x: hidden;
+    background-color: rgb(207, 207, 207) !important;
 }
 #colapsadorA{
     position: relative;
@@ -56,12 +61,15 @@ main{
 @media screen and (max-width: 767px){
     .navbar-header{
         display: flex;
-        flex-direction: column
+        flex-direction: column;
     }
+}
+nav{
+    border: 1px solid black !important;
+    margin: 5px;
 }
 #barra{
     display: flex;
-    justify-content: center;
 }
 header li{
     font-weight: bold;
