@@ -55,12 +55,26 @@ main{
 #logo{
     margin: auto;
 }
+.navbar-toggle{
+    width: fit-content;
+    margin: 0px !important;
+    padding-right: 0px !important;
+    width: fit-content;
+}
+.navbar-brand{
+    width: fit-content;
+    margin: auto;
+}
 @media screen and (max-width: 767px){
     .navbar-header{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    .navbar-brand{
+        padding-left: 0px !important;
     }
 }
+
 nav{
     border: 1px solid black !important;
     margin: 5px;
