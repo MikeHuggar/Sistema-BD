@@ -1,17 +1,22 @@
 *{
     text-align: center;
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(255, 255, 255);
 }
 .carousel-control.left, .carousel-control.right {
     background-image:none !important;
     filter:none !important;
- }
- #myCarousel{
-    margin-bottom: 20px;
- }
+}
+.glyphicon {
+    background: none;
+    opacity: 1;
+}
+#myCarousel{
+    margin-bottom: 20px !important;
+    width: 35vw;
+    margin: auto;
+}
 body{
     overflow-x: hidden;
-    background-color: rgb(207, 207, 207) !important;
 }
 #colapsadorA{
     position: relative;
@@ -55,8 +60,39 @@ a{
 main{
     height: fit-content;
 }
+#main{
+    display: flex;
+    flex-direction: row;
+}
+#barraLat{
+    margin-left: 1%;
+    width: 7vw;
+    height: fit-content;
+    background-color: rgb(192, 192, 192);
+}
+.linkBarra{
+    font-size: 0.7vw;
+}
+.tituloLat{
+    font-size:0.9vw ;
+    background-color: black;
+    color: white;
+}
 #logo{
     margin: auto;
+    margin-top: 0.5%;
+}
+#myNavbar, .dropdown-toggle, .dropdown-menu, .navbar-header, .navbar a:hover, .navbar a:focus{
+    background-color: black !important;
+}
+.navbar a{
+    background: black;
+    color: white !important;
+}
+.caret{
+    color: white;
+    background-color: black;
+    margin-left: 3px !important;
 }
 .navbar-toggle{
     width: fit-content;
@@ -67,8 +103,14 @@ main{
 .navbar-brand{
     width: fit-content;
     margin: auto;
+    color: white !important;
+    background-color: black;
 }
 @media screen and (max-width: 767px){
+    .dropdown-menu{
+        padding-right: 2% !important;
+        border-radius: 0px !important;
+    }
     .navbar-header{
         display: flex;
         flex-direction: row;
@@ -76,14 +118,30 @@ main{
     .navbar-brand{
         padding-left: 0px !important;
     }
+    #barraLat{
+        width: 10vw;
+    }
+    .linkBarra{
+        font-size: 1.5vw;
+    }
+    .tituloLat{
+        font-size: 1.8vw;
+    }
 }
-
+@media screen and (min-width: 768px) {
+    .navbar-header{
+        margin-left: 1% !important;
+    }
+}
 nav{
     border: 1px solid black !important;
     margin: 5px;
 }
 header li{
     font-weight: bold;
+}
+header, header .container-fluid{
+    background-color: black;
 }
 #carrossel{
     height: 70vh;
@@ -173,6 +231,5 @@ footer{
     border-top: 1px solid black;
 }
 footer h4{
-    color: #2e3192;
     font-weight: bold;
 }
