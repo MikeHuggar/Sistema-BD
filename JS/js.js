@@ -1,14 +1,38 @@
-descricao = document.querySelector("#desc");
-document.querySelector("#colapsadorA").addEventListener("click",()=>{ colapsarProj("#colapsadorA")});
-let show = false;
-function colapsarProj(){
-    if (show == false){
-        descricao.style.setProperty("visibility", "visible");
-        document.querySelector(".img-dropdown").style.setProperty("max-height", "fit-content");
-        show = true;
+descricaoA = document.querySelector("#textoHiddenA");
+document.querySelector("#colapsadorA").addEventListener("click",()=>{ colapsarProjA("#colapsadorA")});
+let showA = false;
+function colapsarProjA(){
+    if (showA == false){
+        descricaoA.style.setProperty("display", "block");
+        showA = true;
     } else {
-        descricao.style.setProperty("visibility", "hidden");
-        document.querySelector(".img-dropdown").style.setProperty("max-height", "15vh");
-        show = false;
+        descricaoA.style.setProperty("display", "none");
+        showA = false;
+    }
+};
+
+descricaoB = document.querySelector("#textoHiddenB");
+document.querySelector("#colapsadorB").addEventListener("click",()=>{ colapsarProjB("#colapsadorB")});
+let showB = false;
+function colapsarProjB(){
+    if (showB == false){
+        descricaoB.style.setProperty("display", "block");
+        showB = true;
+    } else {
+        descricaoB.style.setProperty("display", "none");
+        showB = false;
+    }
+};
+
+descricaoC = document.querySelector("#textoHiddenC");
+document.querySelector("#colapsadorC").addEventListener("click",()=>{ colapsarProjC("#colapsadorC")});
+let showC = false;
+function colapsarProjC(){
+    if (showC == false){
+        descricaoC.style.setProperty("display", "block");
+        showC = true;
+    } else {
+        descricaoC.style.setProperty("display", "none");
+        showC = false;
     }
 };

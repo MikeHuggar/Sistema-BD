@@ -2,6 +2,27 @@
     text-align: center;
     background-color: rgb(255, 255, 255);
 }
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+#socials{
+    display: flex;
+    flex-direction: column;
+}
+#textoHiddenA, #textoHiddenB, #textoHiddenC{
+    display: none;
+}
+#noticias{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .carousel-control.left, .carousel-control.right {
     background-image:none !important;
     filter:none !important;
@@ -65,6 +86,8 @@ main{
     flex-direction: row;
 }
 #barraLat{
+    display: flex;
+    flex-direction: column;
     margin-left: 1%;
     width: 7vw;
     height: fit-content;
@@ -74,7 +97,7 @@ main{
     font-size: 0.7vw;
 }
 .tituloLat{
-    font-size:0.9vw ;
+    font-size: 0.9vw;
     background-color: black;
     color: white;
 }
@@ -119,10 +142,10 @@ main{
         padding-left: 0px !important;
     }
     #barraLat{
-        width: 10vw;
+        width: 20vw;
     }
     .linkBarra{
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
     .tituloLat{
         font-size: 1.8vw;
