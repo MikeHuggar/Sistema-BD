@@ -131,6 +131,17 @@ main{
     background-color: black;
 }
 @media screen and (max-width: 767px){
+    #descMostra{
+        width: 95vw !important;
+    }
+    .sobre, #biografia{
+        flex-direction: column;
+        border-radius: 3%;
+        margin-top: 4% !important;
+    }
+    .sobre img, #biografia img{
+        width: 70% !important;
+    }
     .dropdown-menu{
         padding-right: 2% !important;
         border-radius: 0px !important;
@@ -176,17 +187,22 @@ p{
     font-size: large;
     text-align: justify;
 }
-.sobre{
+#descMostra{
+    width: 60vw;
+}
+.sobre, #biografia{
     display: flex;
     align-items: center;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px solid black;
+    padding: 1%;
 }
-.sobre p{
-    font-size: 0.8vw;
+.sobre p, #biografia p{
+    font-size: 2vh;
 }
-.sobre img{
-    width: 15%;
+.sobre img, #biografia img{
+    width: 25%;
 }
 .descrição{
     padding-left: 1%;
@@ -244,12 +260,12 @@ p{
     margin-bottom: -1%;
 }
 .inscrever{
-    background-color: #b72025 !important;
+    background-color: #0b16b1 !important;
     border: 0px !important;
     padding: 1% !important;
 }
 .inscrever b{
-    background-color: #b72025;
+    background-color: #0b16b1;
 }
 footer{
     border-top: 1px solid black;

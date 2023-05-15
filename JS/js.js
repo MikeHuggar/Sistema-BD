@@ -5,9 +5,11 @@ function colapsarProjA(){
     if (showA == false){
         descricaoA.style.setProperty("display", "block");
         showA = true;
+        document.querySelector("#colapsadorA").innerHTML = ("Mostrar Menos...")
     } else {
         descricaoA.style.setProperty("display", "none");
         showA = false;
+        document.querySelector("#colapsadorA").innerHTML = ("Mostrar Mais...")
     }
 };
 
@@ -18,9 +20,11 @@ function colapsarProjB(){
     if (showB == false){
         descricaoB.style.setProperty("display", "block");
         showB = true;
+        document.querySelector("#colapsadorB").innerHTML = ("Mostrar Menos...")
     } else {
         descricaoB.style.setProperty("display", "none");
         showB = false;
+        document.querySelector("#colapsadorB").innerHTML = ("Mostrar Mais...")
     }
 };
 
@@ -31,8 +35,10 @@ function colapsarProjC(){
     if (showC == false){
         descricaoC.style.setProperty("display", "block");
         showC = true;
+        document.querySelector("#colapsadorC").innerHTML = ("Mostrar Menos...")
     } else {
         descricaoC.style.setProperty("display", "none");
         showC = false;
+        document.querySelector("#colapsadorC").innerHTML = ("Mostrar Mais...")
     }
 };
