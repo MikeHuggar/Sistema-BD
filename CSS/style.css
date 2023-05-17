@@ -10,12 +10,6 @@
     text-decoration: none;
     border-radius: 50%;
 }
-#socials{
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    margin: auto;
-}
 #textoHiddenA, #textoHiddenB, #textoHiddenC{
     display: none;
 }
