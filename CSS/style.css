@@ -2,6 +2,25 @@
     text-align: center;
     background-color: rgb(255, 255, 255);
 }
+.checkbox{
+    display: flex;
+    margin-left: 3.65%;
+}
+form{
+    text-align: left !important;
+    margin-bottom: 1.5%;
+    width: 44vw;
+    padding-right: 2%;
+    border-right: 2px solid grey;
+}
+label{
+    margin-right: 100%;
+    width: max-content;
+}
+input{
+    max-width: 50vw;
+    text-align: left;
+}
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -10,8 +29,68 @@
     text-decoration: none;
     border-radius: 50%;
 }
+#socials{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+}
 #textoHiddenA, #textoHiddenB, #textoHiddenC{
     display: none;
+}
+#divLinks{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#noticiaMain{
+    width: 30%;
+}
+.imgLink{
+    padding-left: 2%;
+    width: 15%;
+}
+#divNews{
+    background-color: rgb(177, 177, 177);
+    display: flex;
+    flex-direction: column;
+}
+#divNews h3, #divNews b, #divNews p, #divNews h2, #divNews div, #divNews figure, #subNews h6{
+    background-color: rgb(177, 177, 177);
+}
+#mainNews{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2.5%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;   
+}
+#mainNews p{
+    padding: 2%;
+}
+#mainNews img{
+    background-color: rgb(177, 177, 177);
+    width: 30%;
+    height: 30%;
+}
+#subNews{
+    margin-bottom: 0.5%;
+    justify-content: center;
+}
+#fodasee{
+    display: flex;
+}
+.miniNews img{
+    width: 100%;
+}
+.miniNews h6{
+    background-color: rgb(177, 177, 177);
+}
+#galeria img{
+    padding: 1%;
+    width: 20%;
 }
 #noticias{  
     display: flex;
@@ -34,23 +113,13 @@
 body{
     overflow-x: hidden;
 }
-#colapsadorA{
-    position: relative;
-    font-size: smaller;
-    top: 1%;
-    right: 2%;
-    text-decoration: none;
-}
-#colapsadorA:hover{
-    cursor: pointer;
-}
 #desc{
     margin-left: 15px;
     visibility: hidden;
 }
 .icon-bar{
-    background-color: gray;
-    border: 1px solid gray;
+    background-color: rgb(177, 177, 177);
+    border: 1px solid rgb(177, 177, 177);
 }
 a{
     color: black !important;
@@ -147,14 +216,30 @@ main{
     .navbar-brand{
         padding-left: 0px !important;
     }
-    #barraLat{
-        width: 20vw;
+    #mainNews{
+        flex-direction: column;
     }
-    .linkBarra{
-        font-size: 2vw;
+    #mainNews img{
+        width: 80%;
     }
-    .tituloLat{
-        font-size: 1.8vw;
+    .checkbox{
+        display: flex;
+        margin-left: 3.65%;
+    }
+    form{
+        text-align: left !important;
+        margin-bottom: 1.5%;
+        padding-right: 2%;
+        border-right: none;
+        width: 80vw;
+    }
+    label{
+        margin-right: 100%;
+        width: max-content;
+    }
+    input{
+        max-width: 80vw;
+        text-align: left;
     }
 }
 @media screen and (min-width: 768px) {
@@ -174,7 +259,7 @@ header, header .container-fluid{
 }
 #carrossel{
     height: 70vh;
-    background-color: gray;
+    background-color: rgb(177, 177, 177);
 }
 p{
     text-indent: 5%;
@@ -230,7 +315,7 @@ p{
 }
 .evento, .biografia{
     display: flex;
-    border: 1px solid gray;
+    border: 1px solid rgb(177, 177, 177);
     border-radius: 10px;
     align-items: center;
     margin-top: 1%;
@@ -262,8 +347,11 @@ p{
     background-color: #0b16b1;
 }
 footer{
-    border-top: 1px solid black;
+    border-top: 8px solid lightgray;
 }
-footer h4{
-    font-weight: bold;
+footer img, footer div{
+    background-color: rgb(177, 177, 177);
+}
+footer img{
+    width: 100%;
 }

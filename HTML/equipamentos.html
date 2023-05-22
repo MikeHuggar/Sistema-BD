@@ -18,12 +18,7 @@ Mas enquanto isso...
 </head>
 <body>
     <!--Imagens são placeholders-->
-    <header>
-      <div class="container-fluid">
-        <a href="../HTML/index.html">
-          <img class="img-responsive" id="logo" src="../img/banner.png" width="10%"> 
-        </a>    
-      </div>  
+    <header> 
       <nav class="navbar">
           <div class="container-fluid">
               <div class="navbar-header">
@@ -55,30 +50,78 @@ Mas enquanto isso...
         </nav>
   </header>
     <main id="main">
-
+      <div class="container" id="formDiv">
+        <h2>Formulário de teste</h2>
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="formNome" placeholder="Insira o nome do responsável" name="nome">
+          </div>
+          <div class="form-group">
+            <label for="endereco">Endereço</label>
+            <input type="text" class="form-control" id="formAdress" placeholder="Insira o endereço do responsável" name="endereco">
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="phone" class="form-control" id="formTel" placeholder="Insira o Telefone do responsável" name="telefone">
+          </div>
+          <div class="form-group">
+            <label for="telefone2">Outro telefone</label>
+            <input type="phone" class="form-control" id="formTel2" placeholder="Insira outro número de telefone para contato" name="telefone2">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="formEmail" placeholder="Insira o email do responsável" name="email">
+          </div>
+          <div class="form-group">
+            <label for="prof">Professora(a) responsável</label>
+            <input type="text" class="form-control" id="formProf" placeholder="Insira o nome do(a) professor(a) responsável" name="prof">
+          </div>
+          <div class="form-group">
+            <div class="checkbox">
+              <input type="checkbox" id="equip1" name="equip1" value="cameraxyz">
+              <label for="vehicle1"><b>Câmera braba</b></label><br>
+            </div>
+            <div class="checkbox">  
+              <input type="checkbox" id="equip2" name="equip2" value="cameraabc">
+              <label for="vehicle2"><b>Câmera ainda mais braba</b></label><br>
+            </div>
+            <div class="checkbox">  
+              <input type="checkbox" id="equip3" name="vehicle3" value="lenteseiladasquantas">
+              <label for="equip3"><b>Lentes???</b></label>
+            </div>
+            <div class="checkbox">  
+              <input type="checkbox" id="equip3" name="vehicle3" value="lenteseiladasquantas">
+              <label for="equip3"><b>Mais lentes???</b></label>
+            </div> 
+            <div class="checkbox">  
+              <input type="checkbox" id="equip3" name="vehicle3" value="lenteseiladasquantas">
+              <label for="equip3"><b>As últimas lentes???</b></label>
+            </div>
+            <div class="checkbox">  
+              <input type="checkbox" id="equip3" name="vehicle3" value="lenteseiladasquantas">
+              <label for="equip3"><b>tripé sei la</b></label>
+            </div>
+            <div class="checkbox">  
+              <input type="checkbox" id="equip3" name="vehicle3" value="lenteseiladasquantas">
+              <label for="equip3"><b>(Insira aqui um equipamento)</b></label>
+            </div>
+           </div>
+          <div id="checkbox">
+            <label><input type="checkbox" name="remember"> Li os termos e aceito as consequências...</label>
+          </div>
+          <button type="submit" class="btn btn-default">Submeter</button>
+        </form>
+      </div>
     </main>
     <footer class="d-flex text-center">
-        <div class="row align-items-start">
-            <div class="col-sm-4">
-                <h4>Idealização</h4>
-                <div class="container-fluid">
-                    <img class="img-responsive" src="">
-                </div> 
-            </div>
-            <div class="col-sm-4">
-                <h4>Realização</h4>
-                <div class="container-fluid">
-                    <img class="img-responsive" src="">
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <h4>Apoio</h4> 
-                <div class="container-fluid">
-                    <img class="img-responsive" src="">
-                </div> 
-            </div>
-        </div> 
-    </footer>
+      <div class="row align-items-start">
+        <div class="col-sm-2"></div>
+        <img src="../img/banner.png" alt="" class="col-sm-4">
+        <img src="../img/banner.png" alt="" class="col-sm-4">
+       <div class="col-sm-2"></div> 
+      </div> 
+  </footer>
 </body>
 <script src="../JS/js.js"></script>
 </html>
