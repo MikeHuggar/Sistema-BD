@@ -1,10 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
 *{
     text-align: center;
     background-color: rgb(255, 255, 255);
+    font-family: 'Red Hat Display', sans-serif;
 }
 .checkbox{
     display: flex;
     margin-left: 3.65%;
+}
+#logo{
+    margin: 2px !important;
+    background-color: black;
+    position: relative !important;
+    top: 0% !important;
+    height: max-content;
+    padding: 0;
+}
+#logo img{
+    background-color: black;
 }
 form{
     text-align: left !important;
@@ -29,12 +42,7 @@ input{
     text-decoration: none;
     border-radius: 50%;
 }
-#socials{
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    margin: auto;
-}
+
 #textoHiddenA, #textoHiddenB, #textoHiddenC{
     display: none;
 }
@@ -165,10 +173,6 @@ main{
     background-color: black;
     color: white;
 }
-#logo{
-    margin: auto;
-    margin-top: 0.5%;
-}
 #myNavbar, .dropdown-toggle, .dropdown-menu, .navbar-header, .navbar a:hover, .navbar a:focus{
     background-color: black !important;
 }
@@ -212,7 +216,13 @@ main{
     .navbar-header{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
+    #logo{
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
     .navbar-brand{
         padding-left: 0px !important;
     }
@@ -243,13 +253,15 @@ main{
     }
 }
 @media screen and (min-width: 768px) {
-    .navbar-header{
-        margin-left: 1% !important;
+    #myNavbar{
+        padding: 0;
+        height: 10vh !important;
+        display: flex !important;
+        align-items: end !important;
     }
 }
 nav{
     border: 1px solid black !important;
-    margin: 5px;
 }
 header li{
     font-weight: bold;
@@ -350,7 +362,7 @@ footer{
     border-top: 8px solid lightgray;
 }
 footer img, footer div{
-    background-color: rgb(177, 177, 177);
+    background-color: black;
 }
 footer img{
     width: 100%;
