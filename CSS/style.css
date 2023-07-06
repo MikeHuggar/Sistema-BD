@@ -5,8 +5,16 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 .checkbox{
-    display: flex;
+    display: grid !important;
     margin-left: 3.65%;
+}
+.contaItem{
+    grid-column: 2/2;
+    width: 35px;
+    justify-self: end;
+}
+#quantidadeNXcam{
+    margin-top: -2.5vh;
 }
 #logo{
     margin: 2px !important;
