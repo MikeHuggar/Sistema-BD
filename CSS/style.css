@@ -13,9 +13,6 @@
     width: 35px;
     justify-self: end;
 }
-#quantidadeNXcam{
-    margin-top: -2.5vh;
-}
 #logo{
     margin: 2px !important;
     background-color: black;
@@ -50,7 +47,6 @@ input{
     text-decoration: none;
     border-radius: 50%;
 }
-
 #textoHiddenA, #textoHiddenB, #textoHiddenC{
     display: none;
 }
@@ -230,7 +226,6 @@ main{
         margin-right: auto !important;
         margin-left: auto !important;
     }
-
     .navbar-brand{
         padding-left: 0px !important;
     }
